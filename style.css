@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Cozette";
+    src: url("CozetteVector.ttf");
+}
+
+@font-face {
+    font-family: "Karmatic";
+    src: url("Karmatic.ttf");
+}
+
+* {
+    --fg-color: #DFD0B8;
+    --bg-color: #222831;
+    --dsc-color: #948979;
+
+    font-family: Cozette;
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+}
+
+h1 {
+    font-size: 2.5em;
+    text-wrap: unset;
+}
+
+h1>span {
+    position: relative;
+    top: -0.15em;
+
+    color: var(--dsc-color);
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+}
+
+ol {
+    list-style: square;
+    line-height: 1.5em;
+}
+
+.header {
+    width: 70%;
+    min-width: 23em;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.border {
+    border: 5px double var(--fg-color);
+}
+
+.margin {
+    margin: 0.5em;
+}
+
+.padding-right {
+    padding-right: 1em;
+}
+
+.Karmatic {
+    font-size: 0.6em;
+    font-family: Karmatic;
+    letter-spacing: 0.2em;
+
+    position: relative;
+    top: -0.2em;
+}
+
+.greeting {
+    font-size: 2.1em;
+}
+
+.body {
+    display: flex;
+    gap: 0.5em;
+    width: fit-content;
+    margin: 0 auto 2em auto;
+}
+
+.sidebar {
+    order: 2;
+    padding: 1em;
+    width: fit-content;
+    height: fit-content;
+}
+
+.content {
+    order: 1;
+    padding: 1em;
+    position: relative;
+    line-height: 1.2em;
+}
+
+.disclaimer {
+    color: var(--dsc-color);
+    font-style: italic;
+    font-size: 0.8rem;
+
+    position: absolute;
+    bottom: 0.2em;
+}
+
+@media screen and (max-width: 900px) {
+    .body {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+    }
+
+    .sidebar {
+        order: 2;
+        display: flex;
+        min-width: 85vw;
+    }
+
+    .content {
+        order: 1;
+        min-height: 12em;
+        min-width: 85vw;
+    }
+}
