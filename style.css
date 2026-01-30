@@ -48,13 +48,15 @@ ol {
     width: fit-content;
     min-width: 60vw;
     height: 288px;
+    justify-content: center;
 }
 
 .header-text {
     order: 1;
-    min-width: 60vw;
+    min-width: fit-content;
     height: fit-content;
-    margin-top: 5em;
+    margin: 5em;
+    padding: 1em;
     max-width: 60vw;
     text-align: center;
 }
@@ -139,6 +141,7 @@ ol {
     .sidebar {
         order: 2;
         display: flex;
+        flex-wrap: wrap;
         min-width: 85vw;
     }
 
