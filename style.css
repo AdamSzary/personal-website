@@ -46,7 +46,7 @@ ol {
     display: flex;
     margin: 0 auto 0 auto;
     width: fit-content;
-    min-width: 23em;
+    min-width: 60vw;
     height: 288px;
 }
 
@@ -55,6 +55,7 @@ ol {
     min-width: 60vw;
     height: fit-content;
     margin-top: 5em;
+    max-width: 60vw;
     text-align: center;
 }
 
