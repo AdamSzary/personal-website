@@ -8,6 +8,11 @@
     src: url("Karmatic.ttf");
 }
 
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 * {
     --fg-color: #DFD0B8;
     --bg-color: #222831;
@@ -38,13 +43,26 @@ ol {
 }
 
 .header {
-    width: 70%;
+    display: flex;
+    margin: 0 auto 0 auto;
+    width: fit-content;
     min-width: 23em;
+    height: 288px;
 }
 
-.center {
-    margin-left: auto;
-    margin-right: auto;
+.header-text {
+    order: 1;
+    min-width: 60vw;
+    height: fit-content;
+    margin-top: 5em;
+    text-align: center;
+}
+
+.chito {
+    order: 2;
+    width: fit-content;
+    margin: 0.5em;
+    height: 260px;
 }
 
 .center-text {
@@ -80,7 +98,7 @@ ol {
     display: flex;
     gap: 0.5em;
     width: fit-content;
-    margin: 0 auto 2em auto;
+    margin: 0 auto 0 auto;
 }
 
 .sidebar {
@@ -107,6 +125,10 @@ ol {
 }
 
 @media screen and (max-width: 900px) {
+    .chito {
+        display: none;
+    }
+
     .body {
         display: flex;
         flex-wrap: wrap;
